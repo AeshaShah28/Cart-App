@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity.OrderSummaryActivity"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_116sdp"
+            android:layout_margin="@dimen/_2sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id='@+id/product_img'
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:src="@drawable/mobiologo" />
+
+                <TextView
+                    android:id="@+id/tv_productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_toRightOf="@id/product_img"
+                    android:text="Product Name"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_15sdp" />
+                <TextView
+                    android:id="@+id/tv_qty"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_productName"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_toRightOf="@id/product_img"
+                    android:text="Qty:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_productName"
+                    android:layout_toRightOf="@id/tv_qty"
+                    android:layout_marginLeft="@dimen/_80ssp"
+                    android:text="price :"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_qty"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_toRightOf="@id/product_img"
+                    android:text="selected Colors :"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_brand"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_color"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/product_img"
+                    android:text="selected Brand :"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_brand"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/product_img"
+                    android:text="Total Price :"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/card_product"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+
+
+    </LinearLayout>
+
